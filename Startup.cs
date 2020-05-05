@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using BookDownloader.Models;
+using BookDownloader.Repositry;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -24,6 +25,7 @@ namespace BookDownloader
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddTransient<ICategoriesRepositry, CategoryRepositry>();
           
             services.AddDbContext<BookDownloaderContext>(a =>
             {
@@ -42,6 +44,7 @@ namespace BookDownloader
             }
 
             app.UseRouting();
+            app.UseNodeModules();
 
             app.UseEndpoints(endpoints =>
             {

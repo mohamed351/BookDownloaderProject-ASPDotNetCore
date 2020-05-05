@@ -138,3 +138,12 @@ F:\BookDownloader\BookDownloader\BookDownloader\bin\Debug\netcoreapp3.1\Microsof
 F:\BookDownloader\BookDownloader\BookDownloader\obj\Debug\netcoreapp3.1\BookDownloader.Views.pdb
 F:\BookDownloader\BookDownloader\BookDownloader\bin\Debug\netcoreapp3.1\package-lock.json
 F:\BookDownloader\BookDownloader\BookDownloader\bin\Debug\netcoreapp3.1\package.json
+F:\BookDownloader\BookDownloader\BookDownloader\bin\Debug\netcoreapp3.1\OdeToCode.UseNodeModules.dll
+F:\BookDownloader\BookDownloader\BookDownloader\obj\Debug\netcoreapp3.1\BookDownloader.csproj.CoreCompileInputs.cache
+F:\BookDownloader\BookDownloader\BookDownloader\obj\Debug\netcoreapp3.1\BookDownloader.MvcApplicationPartsAssemblyInfo.cache
+F:\BookDownloader\BookDownloader\BookDownloader\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+F:\BookDownloader\BookDownloader\BookDownloader\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+F:\BookDownloader\BookDownloader\BookDownloader\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+F:\BookDownloader\BookDownloader\BookDownloader\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+F:\BookDownloader\BookDownloader\BookDownloader\obj\Debug\netcoreapp3.1\Razor\Views\Categories\Index.cshtml.g.cs
+F:\BookDownloader\BookDownloader\BookDownloader\obj\Debug\netcoreapp3.1\Razor\Views\Categories\Create.cshtml.g.cs
