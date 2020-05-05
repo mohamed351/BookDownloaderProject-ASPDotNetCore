@@ -147,3 +147,6 @@ F:\BookDownloader\BookDownloader\BookDownloader\obj\Debug\netcoreapp3.1\Razor\Vi
 F:\BookDownloader\BookDownloader\BookDownloader\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
 F:\BookDownloader\BookDownloader\BookDownloader\obj\Debug\netcoreapp3.1\Razor\Views\Categories\Index.cshtml.g.cs
 F:\BookDownloader\BookDownloader\BookDownloader\obj\Debug\netcoreapp3.1\Razor\Views\Categories\Create.cshtml.g.cs
+F:\BookDownloader\BookDownloader\BookDownloader\obj\Debug\netcoreapp3.1\Razor\Views\Categories\Edit.cshtml.g.cs
+F:\BookDownloader\BookDownloader\BookDownloader\obj\Debug\netcoreapp3.1\Razor\Views\Categories\Delete.cshtml.g.cs
+F:\BookDownloader\BookDownloader\BookDownloader\obj\Debug\netcoreapp3.1\Razor\Views\Categories\Details.cshtml.g.cs

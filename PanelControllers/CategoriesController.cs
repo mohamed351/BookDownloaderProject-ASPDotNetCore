@@ -54,6 +54,22 @@ namespace BookDownloader.PanelControllers
             return View(category);
 
         }
+        
+        public IActionResult Details(int? ID)
+        {
+            if(ID == null)
+            {
+                return BadRequest("The request of Category is wrong");
+            }
+            Category category = CategoriesRepositry.GetByID(ID.Value);
+            if (category == null)
+            {
+                return NotFound("The Category Not Found");
+            }
+            return View(category);
+
+        }
+
         [HttpPost]
         public IActionResult Edit(Category category)
         {
@@ -65,8 +81,23 @@ namespace BookDownloader.PanelControllers
             }
             return View();
         }
-        [HttpPost]
+        [HttpGet]
         public IActionResult Delete(int? ID)
+        {
+            if (ID == null)
+            {
+                return BadRequest("The request of Category is wrong");
+            }
+            Category category = CategoriesRepositry.GetByID(ID.Value);
+            if (category == null)
+            {
+                return NotFound("The Category Not Found");
+            }
+            return View(category);
+        }
+        [HttpPost]
+        [ActionName("Delete")]
+        public IActionResult DeleteConfirm(int? ID)
         {
             if(ID == null)
             {
@@ -78,6 +109,8 @@ namespace BookDownloader.PanelControllers
                 return NotFound("The Category Not Found");
             }
 
+            CategoriesRepositry.Delete(category);
+            CategoriesRepositry.SaveAll();
             return RedirectToAction("Index");
            
 
