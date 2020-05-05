@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace BookDownloader.Models
 {
-    public class Users:IdentityUser
+    public class ApplicationUsers:IdentityUser
     {
-
+        public string Name { get; set; }
+        public string ImageUrl { get; set; }
     }
 }
