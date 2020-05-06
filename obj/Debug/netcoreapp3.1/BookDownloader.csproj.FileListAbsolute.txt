@@ -150,3 +150,6 @@ F:\BookDownloader\BookDownloader\BookDownloader\obj\Debug\netcoreapp3.1\Razor\Vi
 F:\BookDownloader\BookDownloader\BookDownloader\obj\Debug\netcoreapp3.1\Razor\Views\Categories\Edit.cshtml.g.cs
 F:\BookDownloader\BookDownloader\BookDownloader\obj\Debug\netcoreapp3.1\Razor\Views\Categories\Delete.cshtml.g.cs
 F:\BookDownloader\BookDownloader\BookDownloader\obj\Debug\netcoreapp3.1\Razor\Views\Categories\Details.cshtml.g.cs
+F:\BookDownloader\BookDownloader\BookDownloader\obj\Debug\netcoreapp3.1\Razor\Views\Books\Index.cshtml.g.cs
+F:\BookDownloader\BookDownloader\BookDownloader\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Pager.cshtml.g.cs
+F:\BookDownloader\BookDownloader\BookDownloader\obj\Debug\netcoreapp3.1\Razor\Views\Books\Create.cshtml.g.cs

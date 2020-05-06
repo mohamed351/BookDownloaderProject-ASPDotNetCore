@@ -26,7 +26,8 @@ namespace BookDownloader
         {
             services.AddMvc();
             services.AddTransient<ICategoriesRepositry, CategoryRepositry>();
-          
+            services.AddTransient<IBookRepositry, BookRepositry>();
+
             services.AddDbContext<BookDownloaderContext>(a =>
             {
                 a.UseSqlServer(Configuration.GetConnectionString("con"));
