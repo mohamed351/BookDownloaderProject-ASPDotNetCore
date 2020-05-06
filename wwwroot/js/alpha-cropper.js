@@ -14,17 +14,18 @@
    
     var ImageElement = document.querySelector(data.fileSelector)
     ImageElement.onchange = function (a) {
-
+        $toCrop = null;
         let ImageFile = a.srcElement.files[0];
         let reader = new FileReader();
         reader.readAsDataURL(ImageFile);
         reader.onload = function (a) {
 
             $(data.imageSelector).attr("src", a.currentTarget.result);
-            $(data.imageSelector).css({ "display": "inline-block", "width": "100%", "height": "100vh" });
-            $("#imageContainer").css({"display":"block"});
+            $(data.imageSelector).css({ "display": "inline-block" });
+            $("#imageContainer").css({ "display": "block" });
+            $(data.imageSelector).cropper('destroy');
           
-            var $toCrop = $(data.imageSelector);
+             $toCrop = $(data.imageSelector);
             $toCrop.cropper({
                 strict: true,
                 cropBoxResizable: false,
@@ -34,15 +35,16 @@
 
                 highlight: false,
                 dragCrop: false,
-                zoomable: true,
-                zoomOnTouch: true,
-                zoomOnWheel: true,
-                viewMode: 2,
+                zoomable: false,
+                zoomOnTouch: false,
+                zoomOnWheel: false,
+                viewMode: 1,
 
                 dragMode: 3,
 
 
                 ready: function () {
+                   
                     $toCrop.cropper("setCropBoxData", { width: data.croppWidth, height: data.croppHeight });
                 },
                 crop: function (event) {
@@ -57,7 +59,7 @@
 
             });
 
-
+           
         }
     }
 

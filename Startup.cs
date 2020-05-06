@@ -24,9 +24,23 @@ namespace BookDownloader
         }
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc();
+            services.AddMvc().AddNewtonsoftJson(a =>
+            {
+                a.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+            });
+
             services.AddTransient<ICategoriesRepositry, CategoryRepositry>();
             services.AddTransient<IBookRepositry, BookRepositry>();
+            services.AddSwaggerDocument();
+
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy",
+                    builder => builder.AllowAnyOrigin()
+                        .AllowAnyMethod()
+                        .AllowAnyHeader());
+            });
+
 
             services.AddDbContext<BookDownloaderContext>(a =>
             {
@@ -43,10 +57,14 @@ namespace BookDownloader
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            
             app.UseRouting();
             app.UseNodeModules();
+            app.UseStaticFiles();
 
+            app.UseOpenApi();
+            app.UseSwaggerUi3();
+          
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute("Default",

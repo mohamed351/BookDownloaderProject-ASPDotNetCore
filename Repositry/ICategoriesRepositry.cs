@@ -8,5 +8,8 @@ namespace BookDownloader.Repositry
 {
     public interface ICategoriesRepositry: IRepositry<Category,int>
     {
+        public IEnumerable<Category> GetCategoriesWithBooks();
+        public Category GetCategoryWithBooks(int ID);
+       
     }
 }

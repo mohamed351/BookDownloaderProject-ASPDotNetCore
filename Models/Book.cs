@@ -12,7 +12,7 @@ namespace BookDownloader.Models
         public string BookName { get; set; }
         [ForeignKey("Category")]
         public int CategoryID { get; set; }
-        public Category Category { get; set; }
+        public  virtual Category Category { get; set; }
         public string ImageUrl { get; set; }
         public string  BookUrl { get; set; }
 

@@ -13,10 +13,14 @@ namespace BookDownloader.Models
         public BookDownloaderContext(DbContextOptions contextOptions)
             :base(contextOptions)
         {
-
+            
         }
         public DbSet<Book> books { get; set; }
         public DbSet<Category> Categories { get; set; }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseLazyLoadingProxies(); 
+        }
 
     }
 }

@@ -1,14 +1,14 @@
-﻿@model BookDownloader.ViewModels.ImageDetailsViewModel 
+﻿@model BookDownloader.ViewModels.BookViewModelCreate
 <div id="imageContainer" class="image-container" style="height:100vh">
     <div style="max-width: 100%">
         <img id="image" style="display: none; max-width: 100%; height:100vh;" />
     </div>
 
     <div class="doc-element">
-        <input type="text" asp-for="X" id="x" />
-        <input type="text" asp-for="Y" id="y" />
-        <input type="text" asp-for="@Model.Width" id="Width" />
-        <input type="text" asp-for="@Model.Height" id="Height" />
+        <input type="text" name="ImageDetails.X" id="x" />
+        <input type="text" name="ImageDetails.Y" id="y" />
+        <input type="text" name="ImageDetails.Width" id="Width" />
+        <input type="text" name="ImageDetails.Height" id="Height" />
     </div>
 
 

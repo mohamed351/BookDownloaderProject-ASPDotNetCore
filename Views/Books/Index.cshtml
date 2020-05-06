@@ -1,5 +1,5 @@
 ﻿@model  BookDownloader.ViewModels.BookViewModelSelect
-
+@using BookDownloader.TagHelpers
 @{
     ViewData["Title"] = "Index";
 }
@@ -42,7 +42,7 @@
                 @Html.DisplayFor(modelItem => item.CategoryID)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ImageUrl)
+             <img src="~/images/@(item.ImageUrl) " class="img-thumbnail img-fluid" width="80" />
             </td>
             <td>
                 @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
